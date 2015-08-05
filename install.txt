@@ -1,33 +1,34 @@
+СѓСЃС‚Р°РЅРѕРІРёС‚СЊ node, railsinstaller
+РѕР±РЅРѕРІРёС‚СЊ ruby, npm, bower
+СѓСЃС‚Р°РЅРѕРІРёС‚СЊ grunt
+npm install grunt-cli -g
+------
+npm install - СѓСЃС‚Р°РЅРѕРІРєР° РјРѕРґСѓР»РµР№ Grunt
 
-npm install - установка модулей Grunt
+gem install compass - СѓСЃС‚Р°РЅРѕРІРєР° Compass
 
-gem install compass - установка Compass
+compass init - СѓСЃС‚Р°РЅРѕРІРєР° РєРѕРЅС„РёРіСѓСЂР°С†РёРё (config.rb) //РєРѕРјРїРёР»СЏС‚РѕСЂ sass
 
-compass init - установка конфигурации (config.rb)
+bower install - СѓСЃС‚Р°РЅРѕРІРєР° РїР°РєРµС‚РѕРІ Bower //СЃРєР°С‡РёРІР°РµС‚ РїР°РєРµС‚С‹ (jquare, bootstrap)
 
-bower install - установка пакетов Bower
-
-dploy install
+dploy install - РґР»СЏ Р·Р°РєР°С‡РєРё РЅР° СЃРµСЂРІРµСЂ
 
 compass watch
 
 
-
-
-
-    "grunt-autoprefixer": "^3.0.3", //автоматическая порстановка префиксов к CSS
-    "grunt-contrib-concat": "latest", //конкатенация файлов
-    "grunt-contrib-copy": "latest", //копирование файлов
-    "grunt-contrib-htmlmin": "latest", // минификация html
-    "grunt-contrib-uglify": "latest", //минификация js
-    "grunt-contrib-watch": "latest", //следит за изменениями в файлах
+    "grunt-autoprefixer": "^3.0.3", //Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєР°СЏ РїРѕСЂСЃС‚Р°РЅРѕРІРєР° РїСЂРµС„РёРєСЃРѕРІ Рє CSS
+    "grunt-contrib-concat": "latest", //РєРѕРЅРєР°С‚РµРЅР°С†РёСЏ С„Р°Р№Р»РѕРІ
+    "grunt-contrib-copy": "latest", //РєРѕРїРёСЂРѕРІР°РЅРёРµ С„Р°Р№Р»РѕРІ
+    "grunt-contrib-htmlmin": "latest", // РјРёРЅРёС„РёРєР°С†РёСЏ html
+    "grunt-contrib-uglify": "latest", //РјРёРЅРёС„РёРєР°С†РёСЏ js
+    "grunt-contrib-watch": "latest", //СЃР»РµРґРёС‚ Р·Р° РёР·РјРµРЅРµРЅРёСЏРјРё РІ С„Р°Р№Р»Р°С…
     "grunt-critical": "latest", //
-    "grunt-csso": "latest", //минификация css
+    "grunt-csso": "latest", //РјРёРЅРёС„РёРєР°С†РёСЏ css
     "grunt-include-replace": "^3.0.0", //
-    "grunt-newer": "latest", //отслеживает файлы которые изменились
+    "grunt-newer": "latest", //РѕС‚СЃР»РµР¶РёРІР°РµС‚ С„Р°Р№Р»С‹ РєРѕС‚РѕСЂС‹Рµ РёР·РјРµРЅРёР»РёСЃСЊ
     "grunt-postcss": "latest",
     "grunt-processhtml": "latest",
-    "grunt-uncss": "latest", //удаление неиспользцемых css свойств
+    "grunt-uncss": "latest", //СѓРґР°Р»РµРЅРёРµ РЅРµРёСЃРїРѕР»СЊР·С†РµРјС‹С… css СЃРІРѕР№СЃС‚РІ
     "grunt-wiredep": "latest",
-    "time-grunt": "latest", //отслеживает время выполнения задач
-    "grunt-sitemap": "latest" //генерирует карту сайта
+    "time-grunt": "latest", //РѕС‚СЃР»РµР¶РёРІР°РµС‚ РІСЂРµРјСЏ РІС‹РїРѕР»РЅРµРЅРёСЏ Р·Р°РґР°С‡
+    "grunt-sitemap": "latest" //РіРµРЅРµСЂРёСЂСѓРµС‚ РєР°СЂС‚Сѓ СЃР°Р№С‚Р°
