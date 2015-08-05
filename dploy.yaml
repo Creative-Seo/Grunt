@@ -2,10 +2,10 @@ beget:
     scheme: ftp
     host: hugo.beget.ru
    
-    user: xoxlov
-    pass: 1!^s04{b
+    user: 111
+    pass: 111
     check: true
     path:
         local: prod/
-        remote: /vptorg.ru/public_html/
+        remote: /111/public_html/
 
