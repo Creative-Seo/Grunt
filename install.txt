@@ -1,9 +1,10 @@
 установить node, railsinstaller
 обновить ruby, npm, bower
-установить grunt
 npm install grunt-cli -g
-------
+
+создать package.json
 npm install - установка модулей Grunt
+npm install cssgrace -ie префиксы
 
 gem install compass - установка Compass
 
