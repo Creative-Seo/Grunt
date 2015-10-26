@@ -13,6 +13,26 @@ grunt.initConfig({
 	  }
 	},
 
+    concat: {
+		options: {
+			stripBanners: {
+                block : false,
+                line : true
+            },
+			sourceMap: true,
+			sourceMapName: 'best',
+			separator: '\n\r',
+            banner: '/*\nConcatinated JS file \n' +
+                    'Author: Mahesh \n' +
+                    'Created Date: <%= grunt.template.today("yyyy-mm-dd") %>' +
+                    '\n */ \n'
+        },
+		dist: {
+		  src: ['dev/js/*.js'],
+		  dest: 'dev/css/js.js',
+		},
+	  },
+
 	autoprefixer: {
 		single_file: {
 			src: 'prod/css/style.min.css',
@@ -124,19 +144,7 @@ grunt.initConfig({
 			dest: 'prod/'
 		  }]
 		}
-	},
-	postcss: {
-      options: {
-        processors: [
-          
-          require('cssgrace'),
-        ]
-      },
-      dist: {
-        src: ['prod/css/style.min.css'],
-        dest: 'prod/css/style.min.css'
-      }
-    }
+	}
 	
 
 });
@@ -159,7 +167,7 @@ grunt.initConfig({
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
 	grunt.loadNpmTasks('grunt-contrib-csslint');
     
-    grunt.registerTask('default', ['postcss']);
+    grunt.registerTask('default', ['concat']);
     grunt.registerTask('all', ['postcss']);
     grunt.registerTask('css', ['csso', 'autoprefixer']);
 	grunt.registerTask('js', ['uglify']);
